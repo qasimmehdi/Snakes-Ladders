@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D869F32B-780D-4943-BEC2-B45820251005}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication5</RootNamespace>
+    <AssemblyName>WindowsFormsApplication5</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnotherGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnotherGame.Designer.cs">
+      <DependentUpon>AnotherGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="game.Designer.cs">
+      <DependentUpon>game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="how.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="how.Designer.cs">
+      <DependentUpon>how.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leaderboard.Designer.cs">
+      <DependentUpon>leaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playerNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="playerNames.Designer.cs">
+      <DependentUpon>playerNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SnakeAndLadder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SnakeAndLadder.Designer.cs">
+      <DependentUpon>SnakeAndLadder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnotherGame.resx">
+      <DependentUpon>AnotherGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="game.resx">
+      <DependentUpon>game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="how.resx">
+      <DependentUpon>how.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leaderboard.resx">
+      <DependentUpon>leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playerNames.resx">
+      <DependentUpon>playerNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SnakeAndLadder.resx">
+      <DependentUpon>SnakeAndLadder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_arrow_left_square_black_243653.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gold-Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silver-Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-bronze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ladder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1f534.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1f535.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snakesladders-1024x853.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snakesladders-1024x853 - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphics2.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bls1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.png" />
+    <None Include="Resources\11.png" />
+    <Content Include="Resources\2.png" />
+    <None Include="Resources\21.png" />
+    <Content Include="Resources\3.png" />
+    <None Include="Resources\31.png" />
+    <Content Include="Resources\4.png" />
+    <None Include="Resources\41.png" />
+    <Content Include="Resources\5.png" />
+    <None Include="Resources\51.png" />
+    <Content Include="Resources\6.png" />
+    <None Include="Resources\61.png" />
+    <Content Include="Resources\a1.png" />
+    <None Include="Resources\yellowToken.png" />
+    <None Include="Resources\pieceBlack_multi01.png" />
+    <None Include="Resources\pieceBlack_border021.png" />
+    <None Include="Resources\pieceBlack_border02.png" />
+    <None Include="Resources\piecePurple_multi02.png" />
+    <None Include="Resources\piecePurple_border02.png" />
+    <None Include="Resources\pieceYellow_multi01.png" />
+    <None Include="Resources\pieceYellow_border01.png" />
+    <None Include="Resources\TITLE.png" />
+    <None Include="Resources\homeBack.png" />
+    <None Include="Resources\graphics2.21.png" />
+    <None Include="Resources\a11.png" />
+    <Content Include="Resources\a2.png" />
+    <None Include="Resources\a21.png" />
+    <Content Include="Resources\a3.png" />
+    <None Include="Resources\a31.png" />
+    <Content Include="Resources\a4.png" />
+    <None Include="Resources\a41.png" />
+    <Content Include="Resources\a5.png" />
+    <None Include="Resources\a51.png" />
+    <Content Include="Resources\a6.png" />
+    <None Include="Resources\a61.png" />
+    <Content Include="Resources\a7.png" />
+    <None Include="Resources\a71.png" />
+    <Content Include="Resources\a8.png" />
+    <None Include="Resources\a81.png" />
+    <None Include="Resources\blackToken.png" />
+    <Content Include="Resources\bls2.png" />
+    <Content Include="Resources\bls3.png" />
+    <Content Include="Resources\bls4.png" />
+    <None Include="Resources\doit.png" />
+    <None Include="Resources\if_refresh_216388 %281%29.png" />
+    <None Include="Resources\if_29_Sound_alt_106217.png" />
+    <None Include="Resources\if_refresh_216388.png" />
+    <None Include="Resources\if_05_Home_106243.png" />
+    <None Include="Resources\if_th-menu-outline_216423.png" />
+    <None Include="Resources\if_User_Interface-26_2044262.png" />
+    <None Include="Resources\blueToken.png" />
+    <None Include="Resources\greenToken.png" />
+    <None Include="Resources\pieceBlue_single00.png" />
+    <None Include="Resources\pieceGreen_multi01.png" />
+    <None Include="Resources\pieceRed_single02.png" />
+    <None Include="Resources\pieceBlue_border03.png" />
+    <None Include="Resources\graphics2.2.png" />
+    <None Include="Resources\orangeSnake %282%29.gif" />
+    <None Include="Resources\blueSnake %282%29.gif" />
+    <None Include="Resources\brownSnake %282%29.gif" />
+    <None Include="Resources\brownSnake.gif" />
+    <None Include="Resources\orangeSnake.gif" />
+    <None Include="Resources\blueSnake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
